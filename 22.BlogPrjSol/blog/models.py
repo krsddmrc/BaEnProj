@@ -35,7 +35,7 @@ class Post(models.Model):
     
     
     def comment_count(self):
-        return self.comment_set.all().count()
+        return self.comment_set.all().count()    #! bütün yorumların toparlanması
     
     def view_count(self):
         return self.postview_set.all().count()
